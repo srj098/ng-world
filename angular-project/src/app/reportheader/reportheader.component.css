@@ -1,0 +1,25 @@
+.header{
+    color:red;
+    border:3px solid;
+    height: 135px;
+    margin-bottom:5px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 250px;
+    border-radius: -20px;
+    
+}
+.logo1{
+    float: left;
+    height: 129px;
+}
+.logo2{
+    float: right;
+    height: 129px;
+}
+@media print{
+    .header{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

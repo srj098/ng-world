@@ -1,0 +1,57 @@
+create new app
+-------------
+ng new App_Name
+
+ng serve - to launch the application
+
+genenrtae comonent
+--------------------
+ng g c component_name
+ 
+service
+---------
+ng g s service name
+
+
+Execution of the application
+------------------------------
+main.ts is the main file which bootstarp the module
+module bootstarps the component
+component having the properties whcih will show in html
+
+component
+-----------
+it having three parts
+1. template - view 
+2. class - logic to control the view
+3. metadata - just information about the comonent or class it will decide that the class is component or just normal class - using decorator
+
+tempalte
+--------
+selector - as an html element(name   -default), as a class( .name), as an attribute([name])
+
+
+Property binding in html
+------------------------
+[property binding] if you want to bind single class use [class] and for multiple classess use [ngClass]
+(event binding) as onClick event - (click)=""
+
+
+
+Structural Directive
+--------------------
+ngIf - show html element based on conditions
+NgSwitch
+ngFor
+
+
+Components interaction
+------------------------
+using @input() and @output() decorator 
+using input decorator child can accept the input from parent
+using output decorator child can send input to parent but using event mechanism it uses eventemitter class to emit the event
+
+
+filters as pipes in angular
+------------------------------
+predefined pipes as uppercase, lowercase, json

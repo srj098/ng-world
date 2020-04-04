@@ -1,0 +1,49 @@
+<div class="path_page">
+    <form>
+      <app-reportheader *ngIf="showHeaderFooter"></app-reportheader>
+      <div class="left">
+            <i class="fa fa-close hide-header " style="font-size:36px" (click) = "hideHeaderFooter()" *ngIf="showBtnHeaderHide"></i>
+            <button class="btn btn-info show-header " (click) = "displayHeaderFooter()" *ngIf="showBtnHeaderShow">Show Header&Footer</button>
+          <p class="title" >Clinical-Pathology</p>
+      <div class="detail">
+        <div class="detail1">
+            <label  class="label1">Name of Patient</label>
+            :<input placeholder="Patient Name" name="patientname" type="text"/>
+            <label  class="label5">Ref. No.</label>
+            :<input [disabled]="isDisabled" id="refno"  type="text"/>
+        </div>
+        <div>
+            <label  class="label2">Age</label>
+            :<input placeholder="Age" type="number" required/>
+            <label class="label3">Sex</label>
+            :<select class="select_sex">
+             <option>M</option>
+              <option>F</option>
+            </select>
+            <label class="label6">Date of Receipt:</label>
+            :<input type="date"/>
+        </div>
+        <div>
+            <label class="label4">Physician</label>
+            :<input placeholder="Physician" type="text"/>
+            <label class="label7">Date of Report</label>
+            :<input type="date"/>
+        </div>
+        <label id="label_select">Select Test Report</label>
+        
+        <select id="test" (change)="selectReport($event.target.value)">
+            <option value="urine">Urine</option>
+            <option value="blood">Complete Blood Count (CBC)</option>
+            <option value="ekg">Echocardiography</option>
+            <option value="electroCardio">Electrocardiogram (EKG)</option>
+          </select>
+          <i class="fa fa-close hide-report" style="font-size:36px" (click) = "hideReport()" *ngIf="dispalybloodreport"></i>
+        <app-blood-report (reportdisplay)= "hideReport($event)" *ngIf="isBlood"></app-blood-report>
+      </div>
+      <p class="msg">Wish you good health.</p>
+      <button class="btn btn-primary print-btn" (click)="printReport()" *ngIf="dispalybloodreport">Print Report</button>
+    </div>
+    <app-reportfooter *ngIf="showHeaderFooter"></app-reportfooter>
+     
+    </form>
+  </div>

@@ -1,0 +1,40 @@
+.test-name {
+  text-align: center;
+  padding-top: 70px;
+}
+.blood-test-report-data {
+  padding-left: 25px;
+}
+input{
+ height: 20px;
+ width:70px
+}
+.report-title{
+  margin-right: 15px
+}
+
+@media print {
+  input{
+    border:none;
+  }
+  .unit{
+    width: 15%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px
+  }
+  .print-divider {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      margin-bottom: 20px
+  }
+  .blood-test-component{
+    width: 32%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px
+  }
+ 
+
+}

@@ -1,0 +1,130 @@
+.title{
+    text-align: center;
+    font-style: italic;
+    font-size: 150%;
+    padding-top: 15px
+}
+
+.left{
+   margin-left: 300px;
+   height: auto;
+   margin-right: 250px;
+   border-style: solid;
+   border-color: red;
+   border-radius: 5px;
+   margin-top:5px;
+}
+.detail{
+    padding:25px
+}
+.label1{
+    margin-right:48px
+}
+.label2{
+    margin-right:128px
+}
+.label3{
+    margin-right:50px;
+    margin-left:50px;
+}
+.label4{
+    margin-right:90px
+}
+.label5{
+    margin-left:240px;
+    margin-right:95px
+}
+
+.label6{
+    margin-left:70px;
+    margin-right:45px
+}
+
+.label7{
+    margin-left:236px;
+    margin-right:57px
+}
+
+.detail1{
+   padding-top: 50px;
+   float:left
+}
+.date1{
+float:right;
+padding-right: 20px
+}
+.date2{
+    float:right;
+    padding-right: 20px
+}
+#test{
+    padding: 5px;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+.msg{
+    text-align: center;
+    clear: both;
+}
+.print-btn{
+    margin-left: 45%;
+    margin-bottom: 2px
+}
+.show-header{
+    margin-left: 83.5%;
+    margin-top: 2px
+}
+.hide-header {
+    margin-left: 96%;
+    color:red;
+}
+.path_page{
+    margin-top: 25px;
+}
+.header-control{
+   margin-left: 25%
+}
+.hide-report{
+    margin-left: -30px;
+    color:red
+}
+
+@media print{
+    input {
+        border: none;
+    }
+    .left{
+        margin: 0;
+        border-color: white;
+    }
+    .label1,.label2,.label4{
+        margin-left: 37px;  
+    }
+    .label3{
+        margin-right: 7px;
+        margin-left: 0px;
+    }
+    .label5{
+        margin-right: 83px;
+        margin-left: 75px;
+    }
+    .label6{
+        margin-right: 30px;
+        margin-left: 22px;
+    }
+    .label7{
+        margin-right: 40px;
+        margin-left: 73px;
+    }
+    select {
+        appearance: none;
+        border: none; 
+        }
+    #label_select,#test{
+        visibility: hidden;
+    }
+    .print-btn, .show-header,.hide-header,.hide-report{
+        visibility: hidden;
+    }  
+}
+

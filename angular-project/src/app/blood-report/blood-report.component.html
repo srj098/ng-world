@@ -1,0 +1,90 @@
+<div class="report">
+        <p class="test-name">*{{ bloodTest | uppercase }}*</p>
+        <p style="text-align: center">***************************************</p>
+  <div class="blood-test-report-data">
+    <div class="row">
+      <div class="container">
+        <div class="col-sm-3 blood-test-component">
+          <label><u>Test Name</u></label><br />
+          <label>Blood Complete Picture</label>
+          <ul>
+            <li>White Blood Cell</li>
+            <li>Red Blood Cell</li>
+            <li>Hemoglobin</li>
+            <li>Hematocrit</li>
+            <li>Mean Cell Volume</li>
+            <li>Mean Cell Hemoglobin</li>
+            <li>Mean Cell Hb Conc</li>
+            <li>Red Cell Dist Width</li>
+            <li>Platelet count</li>
+          </ul>
+          <label><u>WBC Differential count</u></label>
+          <ul>
+            <li>Neutrophil (Neut)</li>
+            <li>Lymphocyte (Lymph)</li>
+            <li>Monocyte (Mono)</li>
+            <li>Eosinophil (Eos)</li>
+            <li>Basophil (Baso)</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2 print-divider">
+          <label><u>Result</u></label><br>
+          <br />
+          <input type="text"/><br>
+          <input type="text"/><br>
+          <input type="text"/><br>
+          <input type="text"/><br>
+          <input type="text"/><br>
+          <input type="text"/><br>
+          <input type="text"/><br>
+          <input  type="text"/><br>
+          <input type="text"/><br><br><br>
+          <input max="100" type="number"/><br>
+          <input type="number"/><br>
+          <input type="number"/><br>
+          <input type="number"/><br>
+          <input type="number"/><br>
+        </div>
+
+        <div class="col-sm-3 print-divider">
+          <label><u>Reference Range</u></label
+          ><br /><br />
+          <span>{{bloodTestNormalRange.wbc.range}}</span><br />
+          <span>{{bloodTestNormalRange.rbc.range}}</span><br />
+          <span>{{bloodTestNormalRange.hb.range}}</span><br />
+          <span>{{bloodTestNormalRange.hematocrit.range}}</span><br />
+          <span>{{bloodTestNormalRange.MCV.range}}</span><br />
+          <span>{{bloodTestNormalRange.MCH.range}}</span><br />
+          <span>{{bloodTestNormalRange.MCHb.range}}</span><br />
+          <span>{{bloodTestNormalRange.RCDW.range}}</span><br />
+          <span>{{bloodTestNormalRange.Platelets.range}}</span><br/><br/><br/>
+          <span>{{bloodTestNormalRange.neutrophils.range}}</span><br />
+          <span>{{bloodTestNormalRange.lymphocytes.range}}</span><br />
+          <span>{{bloodTestNormalRange.monocytes.range}}</span><br />
+          <span>{{bloodTestNormalRange.eosinophils.range}}</span><br />
+          <span>{{bloodTestNormalRange.basophils.range}}</span><br />
+        </div>
+
+        <div class="col-sm-2 unit">
+            <label><u>Unit</u></label
+            ><br /><br />
+            <span>{{bloodTestNormalRange.wbc.unit}}</span><br />
+            <span>{{bloodTestNormalRange.rbc.unit}}</span><br />
+            <span>{{bloodTestNormalRange.hb.unit}}</span><br />
+            <span>{{bloodTestNormalRange.hematocrit.unit}}</span><br />
+            <span>{{bloodTestNormalRange.MCV.unit}}</span><br />
+            <span>{{bloodTestNormalRange.MCH.unit}}</span><br />
+            <span>{{bloodTestNormalRange.MCHb.unit}}</span><br />
+            <span>{{bloodTestNormalRange.RCDW.unit}}</span><br />
+            <span>{{bloodTestNormalRange.Platelets.unit}}</span><br/><br/><br/>
+            <span>{{bloodTestNormalRange.neutrophils.unit}}</span><br />
+            <span>{{bloodTestNormalRange.lymphocytes.unit}}</span><br />
+            <span>{{bloodTestNormalRange.monocytes.unit}}</span><br />
+            <span>{{bloodTestNormalRange.eosinophils.unit}}</span><br />
+            <span>{{bloodTestNormalRange.basophils.unit}}</span><br />
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

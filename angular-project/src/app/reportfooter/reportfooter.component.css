@@ -1,0 +1,19 @@
+.footer{
+    color:red;
+    border:3px solid;
+    height: 80px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 250px; 
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.footer-data{
+    margin-top: 10px; 
+}
+@media print{
+    .footer{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
